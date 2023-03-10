@@ -6,15 +6,21 @@
 
 ### cargo的使用
 
-​	创建新项目：
+创建项目：
 
 ```shell
+//创建项目
 $ cargo new <project_name> [options]
+
+//编译项目
+//编译生成的文件路径：<project_root>/target/debug/<execate_file>
+$ cargo build [options]
+
+//编译并运行
+//使用上比cargo build编译并手动执行可执行文件要便利，推荐使用
+$ cargo run [options] [-- args]
+
+//编译检查
+//确保代码没有错误可以编译，不会产生编译结果
+$ cargo check [options]
 ```
-
-| options | 值&描述                                              |
-| ------- | ---------------------------------------------------- |
-| --vcs   | 指定版本控制软件，支持的软件有git、hg、pijul、fossil |
-|         |                                                      |
-|         |                                                      |
-
